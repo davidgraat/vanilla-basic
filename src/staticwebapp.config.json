@@ -9,5 +9,8 @@
     },
     "mimeTypes": {
       ".json": "text/json"
+    },
+    "networking": {
+        "allowedIpRanges": ["AzureFrontDoor.Backend"]
     }
   }
