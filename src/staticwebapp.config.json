@@ -1,0 +1,13 @@
+{
+    "responseOverrides": {
+      "404": {
+        "rewrite": "/404.html"
+      }
+    },
+    "globalHeaders": {
+      "cache-control": "public; max-age: 300"
+    },
+    "mimeTypes": {
+      ".json": "text/json"
+    }
+  }
