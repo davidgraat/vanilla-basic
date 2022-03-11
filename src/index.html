@@ -5,21 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Landing Page</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" ></script>
 </head>
 
 <body>
   <main>
-    <h1>Vanilla JavaScript App</h1>
-    <a id="workdaylink" href="https://delightful-water-0585b7410.1.azurestaticapps.net/">https://delightful-water-0585b7410.1.azurestaticapps.net/</a>
+    <h1>Landing Page</h1>
+    <div>
+      Workday does not work in Internet Explorer.  Click this link to go to Workday in Microsoft Edge: <a id="workdaylink" href="microsoft-edge:https://dgworkday.azurefd.net">Launch Workday</a>
+    </div>
+    <div>
+      Or copy this URL into your favorite non-IE browser:
+    </div>
+    <div id="urlNotice">
+      https://dgworkday.azurefd.net
+    </div>
+    
     <img src="/images/150.png" />
 
     <script>
       const myUrl = window.location.href;
       $('#workdaylink').attr('href', 'microsoft-edge:' + myUrl);
-      $('#workdaylink').html(myUrl);
+      $('#urlNotice').html(myUrl);
     </script>
   </main>
 </body>

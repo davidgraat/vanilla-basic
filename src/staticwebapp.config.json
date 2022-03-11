@@ -5,7 +5,7 @@
       }
     },
     "globalHeaders": {
-      "cache-control": "public; max-age: 300"
+      "cache-control": "public; max-age: 30"
     },
     "mimeTypes": {
       ".json": "text/json"
